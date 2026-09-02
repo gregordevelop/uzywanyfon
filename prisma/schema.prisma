@@ -32,11 +32,13 @@ model Product {
 }
 
 model ProductVariant {
-  id        String  @id @default(cuid())
+  id        String    @id @default(cuid())
   color     String
   storageGb Int
-  price     Decimal @db.Decimal(10, 2)
-  stock     Int     @default(0)
+  price     Decimal   @db.Decimal(10, 2)
+  stock     Int       @default(0)
+  condition Condition @default(BARDZO_DOBRY)
+  simlock   Boolean   @default(false)
 
   productId String
   product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
@@ -46,11 +48,26 @@ model ProductVariant {
   @@unique([productId, color, storageGb])
 }
 
+enum Condition {
+  NOWY
+  BARDZO_DOBRY
+  DOBRY
+  ZADOWALAJACY
+  USZKODZONY
+}
+
 model Order {
   id        String      @id @default(cuid())
   status    OrderStatus @default(PENDING)
   total     Decimal     @db.Decimal(10, 2)
   createdAt DateTime    @default(now())
+
+  // Dane do wysyłki
+  recipientName String
+  phone         String
+  street        String
+  city          String
+  postalCode    String
 
   userId String
   user   User   @relation(fields: [userId], references: [id])
@@ -85,7 +102,10 @@ model User {
   name          String?
   email         String    @unique
   emailVerified DateTime?
+  passwordHash  String?
   image         String?
+  createdAt     DateTime  @default(now())
+  termsAcceptedAt DateTime?
 
   accounts Account[]
   sessions Session[]
