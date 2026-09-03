@@ -1,0 +1,49 @@
+{
+  "node": {
+    "001c42857d1de3f97138dd4ee96892fafce693d02f": {
+      "workers": {
+        "app/admin/(protected)/orders/page": {
+          "moduleId": 90745,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "logoutAdmin",
+      "filename": "app/actions/admin-auth.ts"
+    },
+    "60bcc7eb69a9f6d382faa09339949d2c8716b509c5": {
+      "workers": {
+        "app/admin/(protected)/orders/page": {
+          "moduleId": 90745,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "loginAdmin",
+      "filename": "app/actions/admin-auth.ts"
+    },
+    "402b8b7cec2c5c9dd1a4c7c2db2889e2f1b5bacb8f": {
+      "workers": {
+        "app/admin/(protected)/orders/page": {
+          "moduleId": 90745,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "updateOrderStatus",
+      "filename": "app/actions/admin-orders.ts"
+    },
+    "40e965305dcb5f7e942b61636b2bdffb2b038244d5": {
+      "workers": {
+        "app/admin/(protected)/orders/page": {
+          "moduleId": 90745,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "deleteOrder",
+      "filename": "app/actions/admin-orders.ts"
+    }
+  },
+  "edge": {}
+}

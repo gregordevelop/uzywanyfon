@@ -5,8 +5,14 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
-  provider = "prisma-client"
-  output   = "../app/generated/prisma"
+  provider      = "prisma-client"
+  output        = "../app/generated/prisma"
+  // "native" = Twój Windows (dev lokalnie). Reszta pokrywa najpopularniejsze
+  // warianty Linuksa na hostingach (cPanel bywa na RHEL/CloudLinux, Debian
+  // albo Alpine/musl) — ponieważ nie wiemy dokładnie, jaki to system,
+  // generujemy silnik dla kilku wariantów naraz i Prisma sam wybierze
+  // właściwy w czasie działania.
+  binaryTargets = ["native", "rhel-openssl-3.0.x", "rhel-openssl-1.1.x", "debian-openssl-3.0.x", "linux-musl-openssl-3.0.x"]
 }
 
 datasource db {

@@ -14,7 +14,10 @@
 /coverage
 
 # next.js
-/.next/
+# .next JEST commitowany (patrz niżej) — wysyłamy zbudowaną wersję przez
+# git, bo hosting nie radzi sobie z budowaniem na serwerze. Ignorujemy
+# tylko cache builda, bo jest duży i niepotrzebny do uruchomienia appki.
+/.next/cache/
 /out/
 
 # production
@@ -40,7 +43,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-/app/generated/prisma
+# wygenerowany klient Prisma JEST commitowany (patrz niżej) — zawiera silniki
+# dla kilku platform (binaryTargets w schema.prisma), więc serwer nie musi
+# sam odpalać `prisma generate`.
 
 # lokalnie wgrywane zdjęcia produktów (poza repo w produkcji, patrz UPLOADS_DIR)
 /.uploads

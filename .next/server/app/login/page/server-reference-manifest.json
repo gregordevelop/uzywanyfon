@@ -1,0 +1,49 @@
+{
+  "node": {
+    "00950de10f10df5ceaae4356568f45827cb8bbcf62": {
+      "workers": {
+        "app/login/page": {
+          "moduleId": 51661,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "logoutUser",
+      "filename": "app/actions/auth.ts"
+    },
+    "600f9000212e03ec1bea01d08fa49594f4efcbd095": {
+      "workers": {
+        "app/login/page": {
+          "moduleId": 51661,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "loginUser",
+      "filename": "app/actions/auth.ts"
+    },
+    "603fbda727dcaf4e80679b06ec07c80428ca848bf7": {
+      "workers": {
+        "app/login/page": {
+          "moduleId": 51661,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "verifyEmailToken",
+      "filename": "app/actions/auth.ts"
+    },
+    "609f5a64cb7aa6f00dcb24424bbb8b96b5da2bba17": {
+      "workers": {
+        "app/login/page": {
+          "moduleId": 51661,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "registerUser",
+      "filename": "app/actions/auth.ts"
+    }
+  },
+  "edge": {}
+}

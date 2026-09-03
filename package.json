@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "node server.js",
     "lint": "eslint",
-    "postinstall": "(prisma skills sync || true) && next build",
+    "postinstall": "prisma skills sync || exit 0",
     "seed": "tsx prisma/seed.ts",
     "studio": "prisma studio --config=prisma.studio.config.ts"
   },

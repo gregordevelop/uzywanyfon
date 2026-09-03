@@ -1,0 +1,23 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/admin/(protected)/orders/page": "/admin/orders",
+  "/admin/(protected)/page": "/admin",
+  "/admin/(protected)/products/[id]/edit/page": "/admin/products/[id]/edit",
+  "/admin/(protected)/products/new/page": "/admin/products/new",
+  "/admin/(protected)/users/page": "/admin/users",
+  "/admin/login/page": "/admin/login",
+  "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
+  "/api/uploads/[...path]/route": "/api/uploads/[...path]",
+  "/cart/page": "/cart",
+  "/favicon.ico/route": "/favicon.ico",
+  "/login/page": "/login",
+  "/marka/[brand]/page": "/marka/[brand]",
+  "/orders/page": "/orders",
+  "/page": "/",
+  "/polityka-prywatnosci/page": "/polityka-prywatnosci",
+  "/products/[id]/page": "/products/[id]",
+  "/register/page": "/register",
+  "/regulamin/page": "/regulamin",
+  "/verify-email/page": "/verify-email"
+}

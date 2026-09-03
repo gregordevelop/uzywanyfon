@@ -1,0 +1,49 @@
+{
+  "node": {
+    "001c42857d1de3f97138dd4ee96892fafce693d02f": {
+      "workers": {
+        "app/admin/(protected)/users/page": {
+          "moduleId": 72273,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "logoutAdmin",
+      "filename": "app/actions/admin-auth.ts"
+    },
+    "60bcc7eb69a9f6d382faa09339949d2c8716b509c5": {
+      "workers": {
+        "app/admin/(protected)/users/page": {
+          "moduleId": 72273,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "loginAdmin",
+      "filename": "app/actions/admin-auth.ts"
+    },
+    "400d74b42bddbecb290b603d54f5c3313a6acf71b7": {
+      "workers": {
+        "app/admin/(protected)/users/page": {
+          "moduleId": 72273,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "deleteUser",
+      "filename": "app/actions/admin-users.ts"
+    },
+    "405d338113aab11fca05ca7f4306939d5b83039251": {
+      "workers": {
+        "app/admin/(protected)/users/page": {
+          "moduleId": 72273,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "verifyUserEmail",
+      "filename": "app/actions/admin-users.ts"
+    }
+  },
+  "edge": {}
+}

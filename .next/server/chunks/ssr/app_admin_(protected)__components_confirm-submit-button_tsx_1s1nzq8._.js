@@ -1,0 +1,3 @@
+module.exports=[37875,a=>{"use strict";var b=a.i(18747);a.s(["ConfirmSubmitButton",0,function({icon:a,label:c,confirmMessage:d,variant:e="danger"}){return(0,b.jsx)("button",{type:"submit","aria-label":c,title:c,onClick:a=>{confirm(d)||a.preventDefault()},className:`flex h-9 w-9 items-center justify-center rounded-lg text-zinc-500 transition-colors dark:text-zinc-400 ${"danger"===e?"hover:bg-red-50 hover:text-red-600 dark:hover:bg-red-950 dark:hover:text-red-400":"hover:bg-green-50 hover:text-green-600 dark:hover:bg-green-950 dark:hover:text-green-400"}`,children:a})}])}];
+
+//# sourceMappingURL=app_admin_%28protected%29__components_confirm-submit-button_tsx_1s1nzq8._.js.map
